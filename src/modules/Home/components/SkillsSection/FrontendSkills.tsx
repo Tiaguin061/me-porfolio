@@ -1,7 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 
 import {
-  SiPostgresql,
   SiChakraui,
   SiCss3,
   SiStyledcomponents,
