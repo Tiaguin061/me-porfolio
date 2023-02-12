@@ -97,18 +97,18 @@ export function HireAService() {
             </Flex>
           </Flex>
         </Flex>
-
-        <Flex position="absolute" right="2" bottom="2">
-          <CustomLink
-            link="#"
-            linkProps={{
-              p: 3,
-            }}
-          >
-            <RiArrowUpSLine size={20} />
-          </CustomLink>
-        </Flex>
       </ScaleFade>
+
+      <Flex position="absolute" right="2" bottom="2">
+        <CustomLink
+          link="#"
+          linkProps={{
+            p: 3,
+          }}
+        >
+          <RiArrowUpSLine size={20} />
+        </CustomLink>
+      </Flex>
     </Box>
   );
 }
