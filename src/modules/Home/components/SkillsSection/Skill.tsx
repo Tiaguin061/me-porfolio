@@ -10,7 +10,7 @@ export function Skill({ icon, title }: SkillProps) {
     <Box
       display="flex"
       alignItems="center"
-      bg="gray.100"
+      bg="gray.800"
       borderRadius="md"
       py={2}
       px={4}

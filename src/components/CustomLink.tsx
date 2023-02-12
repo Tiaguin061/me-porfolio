@@ -10,7 +10,7 @@ export function CustomLink({ link, linkProps, children }: CustomLinkProps) {
   return (
     <Link
       href={link}
-      bg="gray.100"
+      bg="gray.800"
       borderRadius="md"
       py={2.5}
       px={4}

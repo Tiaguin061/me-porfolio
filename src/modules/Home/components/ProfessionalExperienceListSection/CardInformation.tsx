@@ -21,7 +21,7 @@ export function CardInformation({
       <Text fontSize={["md"]} mt={1} color="gray.400">
         {experienceDate}
       </Text>
-      <Text fontSize={["md"]} mt={2} color="gray.200">
+      <Text fontSize={["md"]} mt={2} color="gray.100">
         {description}
       </Text>
       {hasAboutMoreButton && (

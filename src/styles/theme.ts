@@ -11,7 +11,7 @@ export const theme = extendTheme({
       'html, body': {
         height: '100%',
         bg: 'blackAlpha.700',
-        color: 'gray.50',
+        color: 'gray.100',
         letterSpacing: "wide",
         scrollBehavior: 'smooth',
       },
@@ -31,8 +31,11 @@ export const theme = extendTheme({
       "600": "#242731",
     },
     gray: {
-      "100": "#2c303c",
-      "50": "#e2e8f0",
+      "800": "#2c303c",
+      "600": "#4a5568",
+      "400": "#a0aec0",
+      "300": "#cbd5e0",
+      "100": "#e2e8f0",
     },
     pink: {       
       "500": "#FF69F9",       

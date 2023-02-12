@@ -19,7 +19,7 @@ export function SectionTitle({ children, ...rest }: SectionTitleProps) {
         left: 0,
         width: "60%",
         height: "2px",
-        background: "gray.50",
+        background: "gray.100",
       }}
       {...rest}
     >

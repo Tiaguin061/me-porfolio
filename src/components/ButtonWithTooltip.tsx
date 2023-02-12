@@ -19,14 +19,14 @@ export function ButtonWithTooltip({
         py={2}
         px={4}
         mt={1}
-        bg="gray.100"
+        bg="gray.800"
         borderRadius="md"
         cursor="pointer"
         fontWeight="normal"
         fontSize={["md"]}
         lineHeight="20px"
         _hover={{
-          bg: "gray.100",
+          bg: "gray.800",
         }}
         {...buttonProps}
       >
