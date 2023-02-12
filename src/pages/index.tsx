@@ -7,6 +7,7 @@ import { FormationsListSection } from "@/modules/Home/components/FormationsListS
 import { About } from "@/modules/Home/components/About";
 import { Objective } from "@/modules/Home/components/Objective";
 import { Introduction } from "@/modules/Home/components/Introduction";
+import { HireAService } from "@/modules/Home/components/HireAService";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         <SkillsSection />
         <FormationsListSection />
         <About />
+
+        <HireAService />
       </Box>
     </>
   );
