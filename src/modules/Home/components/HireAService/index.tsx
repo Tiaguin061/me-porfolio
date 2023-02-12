@@ -2,8 +2,9 @@ import { Box, Flex, useClipboard, useToast } from "@chakra-ui/react";
 import { SiDiscord, SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
 
 import { SectionTitle } from "@/components/SectionTitle";
-import { ContactLink } from "@/components/ContactLink";
-import { ContactWithTooltip } from "@/components/ContactWithTooltip";
+import { CustomLink } from "@/components/CustomLink";
+import { ButtonWithTooltip } from "@/components/ButtonWithTooltip";
+import { RiArrowUpSLine } from "react-icons/ri";
 
 export function HireAService() {
   const { onCopy } = useClipboard("tiaguin180@gmail.com");
@@ -22,13 +23,20 @@ export function HireAService() {
   }
 
   return (
-    <Box as="section" id="contact-me" py={8} px={4} bg="blackAlpha.800">
+    <Box
+      as="section"
+      id="contact-me"
+      py={8}
+      px={4}
+      bg="blackAlpha.800"
+      position="relative"
+    >
       <Flex alignItems="center" flexDirection="column">
         <SectionTitle>Contrate meu serviço</SectionTitle>
 
         <Flex mt={4} alignItems="flex-start" w="100%">
           <Flex alignItems="flex-start" flexWrap="wrap" gap={2}>
-            <ContactWithTooltip
+            <ButtonWithTooltip
               buttonProps={{
                 onClick: onClipboardEmail,
               }}
@@ -40,24 +48,50 @@ export function HireAService() {
             >
               <SiGmail color="#DB4437" />
               tiaguin180@gmail.com
-            </ContactWithTooltip>
+            </ButtonWithTooltip>
 
-            <ContactLink link="https://www.instagram.com/tiaguinho_gon1/">
+            <CustomLink
+              link="https://www.instagram.com/tiaguinho_gon1/"
+              linkProps={{
+                target: "_blank",
+              }}
+            >
               <SiInstagram color="#E1306C" />
               tiaguinho_gon1
-            </ContactLink>
+            </CustomLink>
 
-            <ContactLink link="https://www.linkedin.com/in/tiagogoncalves200428/">
+            <CustomLink
+              link="https://www.linkedin.com/in/tiagogoncalves200428/"
+              linkProps={{
+                target: "_blank",
+              }}
+            >
               <SiLinkedin color="#1293d2" />
               Linkedin
-            </ContactLink>
+            </CustomLink>
 
-            <ContactLink link="https://discord.com/users/586186122611130368">
+            <CustomLink
+              link="https://discord.com/users/586186122611130368"
+              linkProps={{
+                target: "_blank",
+              }}
+            >
               <SiDiscord color="#7289da" />
               Discord
-            </ContactLink>
+            </CustomLink>
           </Flex>
         </Flex>
+      </Flex>
+
+      <Flex position="absolute" right="2" bottom="2">
+        <CustomLink
+          link="#"
+          linkProps={{
+            p: 3,
+          }}
+        >
+          <RiArrowUpSLine size={20} />
+        </CustomLink>
       </Flex>
     </Box>
   );

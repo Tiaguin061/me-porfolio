@@ -1,12 +1,12 @@
-import { FlexProps, Link, LinkProps } from "@chakra-ui/react";
+import { Link, LinkProps } from "@chakra-ui/react";
 
-export interface ContactLinkProps {
+export interface CustomLinkProps {
   children: React.ReactNode;
   link: string;
   linkProps?: LinkProps;
 }
 
-export function ContactLink({ link, linkProps, children }: ContactLinkProps) {
+export function CustomLink({ link, linkProps, children }: CustomLinkProps) {
   return (
     <Link
       href={link}
@@ -14,7 +14,6 @@ export function ContactLink({ link, linkProps, children }: ContactLinkProps) {
       borderRadius="md"
       py={2.5}
       px={4}
-      target="_blank"
       display="flex"
       alignItems="center"
       gap={2}

@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { RiArrowDownSLine } from "react-icons/ri";
 
-import { ContactLink } from "@/components/ContactLink";
+import { CustomLink } from "@/components/CustomLink";
 import { SectionTitle } from "@/components/SectionTitle";
 
 export function Objective() {
@@ -17,7 +17,7 @@ export function Objective() {
             com as tecnologias NextJS, NodeJS e Typescript.
           </Text>
 
-          <ContactLink
+          <CustomLink
             link="#contact-me"
             linkProps={{
               w: "max-content",
@@ -25,12 +25,11 @@ export function Objective() {
               _hover: {
                 filter: "brightness(110%)",
               },
-              target: "_self",
             }}
           >
             Entre em contato
             <RiArrowDownSLine size={20} />
-          </ContactLink>
+          </CustomLink>
         </Flex>
       </Flex>
     </Box>

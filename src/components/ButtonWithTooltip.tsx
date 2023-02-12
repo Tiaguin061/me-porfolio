@@ -1,16 +1,16 @@
 import { Button, ButtonProps, Tooltip, TooltipProps } from "@chakra-ui/react";
 
-export interface ContactWithTooltipProps {
+export interface ButtonWithTooltipProps {
   children: React.ReactNode;
   buttonProps?: ButtonProps;
   tooltipProps?: TooltipProps;
 }
 
-export function ContactWithTooltip({
+export function ButtonWithTooltip({
   children,
   tooltipProps,
   buttonProps,
-}: ContactWithTooltipProps) {
+}: ButtonWithTooltipProps) {
   return (
     <Tooltip hasArrow bg="pink.500" {...tooltipProps}>
       <Button

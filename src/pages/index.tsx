@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Portfólio - Tiago Gonçalves</title>
       </Head>
-      <Box as="main">
+      <Box as="main" id="/">
         <Introduction />
         <Objective />
         <ProfessionalExperienceList />
