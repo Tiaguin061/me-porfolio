@@ -3,10 +3,22 @@ import { RiArrowDownSLine } from "react-icons/ri";
 
 import { CustomLink } from "@/components/CustomLink";
 import { SectionTitle } from "@/components/SectionTitle";
+import Aos from "aos";
+import { useEffect } from "react";
 
 export function Objective() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <Box as="section" id="objective" py={8} px={4} bg="blackAlpha.800">
+    <Box
+      data-aos="fade-left"
+      as="section"
+      id="objective"
+      py={8}
+      px={4}
+      bg="blackAlpha.800"
+    >
       <Flex alignItems="center" flexDirection="column">
         <SectionTitle>Objetivo</SectionTitle>
 
