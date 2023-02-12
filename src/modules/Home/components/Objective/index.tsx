@@ -1,17 +1,37 @@
-import { SectionTitle } from "@/components/SectionTitle";
 import { Box, Flex, Text } from "@chakra-ui/react";
+import { RiArrowDownSLine } from "react-icons/ri";
+
+import { ContactLink } from "@/components/ContactLink";
+import { SectionTitle } from "@/components/SectionTitle";
 
 export function Objective() {
   return (
-    <Box as="section" py={8} px={4} bg="blackAlpha.800">
+    <Box as="section" id="objective" py={8} px={4} bg="blackAlpha.800">
       <Flex alignItems="center" flexDirection="column">
         <SectionTitle>Objetivo</SectionTitle>
 
-        <Text as="p" mt={4} color="gray.300">
-          Minha meta é atuar como freelancer ou em uma empresa fixa na área de
-          programação, seja como Backend, Frontend ou Fullstack, trabalhando com
-          as tecnologias NextJS, NodeJS e Typescript.
-        </Text>
+        <Flex flexDirection="column">
+          <Text as="p" mt={4} mb={2} color="gray.300">
+            Minha meta é atuar como freelancer ou em uma empresa fixa na área de
+            programação, seja como Backend, Frontend ou Fullstack, trabalhando
+            com as tecnologias NextJS, NodeJS e Typescript.
+          </Text>
+
+          <ContactLink
+            link="#contact-me"
+            linkProps={{
+              w: "max-content",
+              transition: "all 0.2s",
+              _hover: {
+                filter: "brightness(110%)",
+              },
+              target: "_self",
+            }}
+          >
+            Entre em contato
+            <RiArrowDownSLine size={20} />
+          </ContactLink>
+        </Flex>
       </Flex>
     </Box>
   );

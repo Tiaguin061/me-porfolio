@@ -7,7 +7,7 @@ import { CardInformation } from "./CardInformation";
 
 export function ProfessionalExperienceList() {
   return (
-    <Box as="section" pt={10} pb={6} px={4}>
+    <Box as="section" id="professional-experience" pt={10} pb={6} px={4}>
       <Flex alignItems="center" flexDirection="column">
         <SectionTitle mb={8}>Experiência profissional</SectionTitle>
 

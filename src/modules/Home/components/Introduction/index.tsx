@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 
 export function Introduction() {
   return (
-    <Box as="section" px={8} py={4} bg="blackAlpha.800">
+    <Box as="section" id="introduction" px={8} py={4} bg="blackAlpha.800">
       <Box>
         <Text as="h2" fontSize={["2xl"]}>
           Olá, sou o

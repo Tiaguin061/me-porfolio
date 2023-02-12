@@ -22,7 +22,14 @@ import { FrontendSkills } from "./FrontendSkills";
 
 export function SkillsSection() {
   return (
-    <Box as="section" mt={4} py={10} bg="blackAlpha.600" position="relative">
+    <Box
+      as="section"
+      id="skills"
+      mt={4}
+      py={10}
+      bg="blackAlpha.600"
+      position="relative"
+    >
       <Box px={4}>
         <Box display="flex" alignItems="center" flexDirection="column">
           <SectionTitle mb={4}>Habilidades</SectionTitle>

@@ -3,7 +3,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 
 export function About() {
   return (
-    <Box as="section" py={6} position="relative">
+    <Box as="section" id="about" py={6} position="relative">
       <Box px={4}>
         <Flex alignItems="center" flexDirection="column">
           <SectionTitle>Sobre</SectionTitle>
