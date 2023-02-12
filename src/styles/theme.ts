@@ -13,6 +13,7 @@ export const theme = extendTheme({
         bg: 'blackAlpha.700',
         color: 'gray.50',
         letterSpacing: "wide",
+        scrollBehavior: 'smooth',
       },
     }
   },
