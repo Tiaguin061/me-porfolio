@@ -18,7 +18,7 @@ export function ProfessionalExperienceList() {
               <CardInformation
                 title="Kaguya"
                 experienceDate="Ago/2021 - Em andamento"
-                description="Projeto pessoal desenvolvido com um amigo, na qual é uma plataforma que visa organizar conteúdos espalhados pela internet."
+                description="Desenvolvi um projeto pessoal em parceria com um amigo, que é uma plataforma para organizar conteúdos dispersos na internet."
                 hasAboutMoreButton
               />
             </Flex>
@@ -28,10 +28,7 @@ export function ProfessionalExperienceList() {
               <CardInformation
                 title="The monkeynauts"
                 experienceDate="Dez/2021 - Set/2022"
-                description="Projeto freelancer em equipe, aonde foi desenvolvido em
-                NodeJS uma api completa do jogo, possuíndo sistema de
-                compras com crypto moeda e entre outras features e
-                consumida no frontend com ReactJS."
+                description="Trabalhei como freelancer em uma equipe e desenvolvemos uma API completa para um jogo, utilizando NodeJS. A API possui recursos como sistema de compras com criptomoedas, entre outras características, e foi consumida no frontend com ReactJS."
                 hasAboutMoreButton
               />
             </Flex>
@@ -41,9 +38,7 @@ export function ProfessionalExperienceList() {
               <CardInformation
                 title="Nou"
                 experienceDate="Ago/2022 - Dez/2022"
-                description=" Projeto freelancer, aonde foi desenvolvido em NodeJS uma api
-                completa para criação de empresa, cargos e usuários e
-                consumida no frontend com ReactJS."
+                description="Também trabalhei como freelancer e desenvolvi uma API completa para a criação de empresas, cargos e usuários, usando NodeJS. Essa API foi consumida no frontend com ReactJS."
                 hasAboutMoreButton
               />
             </Flex>

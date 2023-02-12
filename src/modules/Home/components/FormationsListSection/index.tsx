@@ -19,8 +19,7 @@ export function FormationsListSection() {
                 title="Javascript e Typescript do básico ao avançado"
                 local="Udemy - Luiz Otávio Miranda"
                 experienceDate="Nov/2020 - Fev/2023"
-                description="Com este longo curso, pude aprofundar mais na stack que
-                domino e adquirir experiência para aplicar nos projetos."
+                description="Com o longo curso que fiz, tive a oportunidade de me aprofundar mais nas tecnologias que domino e adquirir mais experiência para aplicar nos meus projetos."
               />
             </Flex>
 
@@ -31,9 +30,7 @@ export function FormationsListSection() {
                 profissional"
                 local="Microcamp"
                 experienceDate="Dez/2021 - Out/2023"
-                description="Curso presencial, na qual estou desenvolvendo habilidade
-                no pacote Office com conteúdos sobre administração."
-                hasAboutMoreButton
+                description="Estou participando de um curso presencial, no qual estou desenvolvendo minhas habilidades no pacote Office, com conteúdos relacionados à administração."
               />
             </Flex>
           </Flex>

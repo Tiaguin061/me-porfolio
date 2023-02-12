@@ -8,10 +8,10 @@ export function Objective() {
         <SectionTitle>Objetivo</SectionTitle>
 
         <Text as="p" mt={4} color="gray.300">
-          Com 3 anos de experiência sendo Desenvolvedor web Fullstack, sou
-          criativo e possuo habilidades na criação de códigos utilizando a stack
-          Javascript/Tyescript. Busco atuar na área de programação como Backend,
-          Frontend ou Fullstack.
+          Minha meta é atuar como freelancer ou em uma empresa fixa na área de
+          programação, seja como Backend, Frontend ou Fullstack, trabalhando com
+          as tecnologias NextJS e/ou NodeJS, utilizando a stack
+          Javascript/Typescript.
         </Text>
       </Flex>
     </Box>
