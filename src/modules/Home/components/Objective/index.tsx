@@ -10,8 +10,7 @@ export function Objective() {
         <Text as="p" mt={4} color="gray.300">
           Minha meta é atuar como freelancer ou em uma empresa fixa na área de
           programação, seja como Backend, Frontend ou Fullstack, trabalhando com
-          as tecnologias NextJS e/ou NodeJS, utilizando a stack
-          Javascript/Typescript.
+          as tecnologias NextJS, NodeJS e Typescript.
         </Text>
       </Flex>
     </Box>
