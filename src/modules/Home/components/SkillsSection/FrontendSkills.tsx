@@ -7,12 +7,11 @@ import {
   SiFirebase,
 } from "react-icons/si";
 import { DiReact } from "react-icons/di";
-
-import { SectionTitle } from "@/components/SectionTitle";
-
-import { Skill } from "./Skill";
 import { TbBrandNextjs } from "react-icons/tb";
 import { GiFoxHead } from "react-icons/gi";
+
+import { SectionTitle } from "@/components/SectionTitle";
+import { Skill } from "@/components/Skill";
 
 export function FrontendSkills() {
   return (

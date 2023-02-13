@@ -17,7 +17,7 @@ export function Skill({ icon, title }: SkillProps) {
     >
       <Box display="flex" alignItems="center" gap={2}>
         {icon}
-        <Text fontSize={["md"]} mt={1} lineHeight="20px">
+        <Text fontSize={["sm", "md"]} mt={1} lineHeight="20px">
           {title}
         </Text>
       </Box>

@@ -9,10 +9,10 @@ import {
 } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { DiDatabase } from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
 
 import { SectionTitle } from "@/components/SectionTitle";
-
-import { Skill } from "./Skill";
+import { Skill } from "@/components/Skill";
 
 export function BackendSkills() {
   return (
@@ -27,10 +27,7 @@ export function BackendSkills() {
           title="Typescript"
         />
 
-        <Skill
-          icon={<SiTypescript color="#44883e" size={20} />}
-          title="NodeJS"
-        />
+        <Skill icon={<FaNodeJs color="#44883e" size={20} />} title="NodeJS" />
 
         <Skill
           icon={<SiJavascript color="#F0DB4F" size={20} />}
