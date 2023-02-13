@@ -1,10 +1,11 @@
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Box, Button, ButtonProps, Text } from "@chakra-ui/react";
 
 export interface CardInformation {
   title?: string;
   experienceDate?: string;
   description?: string;
   hasAboutMoreButton?: boolean;
+  buttonProps?: ButtonProps;
 }
 
 export function CardInformation({
@@ -12,6 +13,7 @@ export function CardInformation({
   description,
   experienceDate,
   hasAboutMoreButton,
+  buttonProps,
 }: CardInformation) {
   return (
     <Box display="flex" alignItems="flex-start" flexDirection="column">
@@ -34,6 +36,7 @@ export function CardInformation({
             bg: "none",
             color: "pink.500",
           }}
+          {...buttonProps}
         >
           Saiba mais
         </Button>
