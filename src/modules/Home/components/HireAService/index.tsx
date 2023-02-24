@@ -46,7 +46,13 @@ export function HireAService() {
         onViewportEnter={onOpen}
         onViewportLeave={onClose}
       >
-        <Flex alignItems="center" flexDirection="column">
+        <Flex
+          alignItems="center"
+          flexDirection="column"
+          mx="auto"
+          my="0"
+          maxW={860}
+        >
           <SectionTitle>Contrate meu serviço</SectionTitle>
 
           <Flex mt={4} alignItems="flex-start" w="100%">

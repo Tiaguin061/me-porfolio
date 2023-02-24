@@ -5,14 +5,14 @@ export function About() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box as="section" id="about" py={6} position="relative">
+    <Box as="section" id="about" py={6} position="relative" bg="blackAlpha.800">
       <ScaleFade
         initialScale={0.6}
         in={isOpen}
         onViewportEnter={onOpen}
         onViewportLeave={onClose}
       >
-        <Box px={4}>
+        <Box px={4} mx="auto" my="0" maxW={860}>
           <Flex alignItems="center" flexDirection="column">
             <SectionTitle>Sobre</SectionTitle>
 

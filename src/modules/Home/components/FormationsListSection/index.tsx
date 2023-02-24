@@ -9,14 +9,20 @@ export function FormationsListSection() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box as="section" py={10} px={4} bg="blackAlpha.800">
+    <Box as="section" py={10} px={4}>
       <ScaleFade
         initialScale={0.6}
         in={isOpen}
         onViewportEnter={onOpen}
         onViewportLeave={onClose}
       >
-        <Flex alignItems="center" flexDirection="column">
+        <Flex
+          alignItems="center"
+          flexDirection="column"
+          mx="auto"
+          my="0"
+          maxW={860}
+        >
           <SectionTitle>Formações</SectionTitle>
 
           <Flex mt={6} justifyContent="flex-start" w="100%">
@@ -43,7 +49,7 @@ export function FormationsListSection() {
                 profissional"
                   local="Microcamp"
                   experienceDate="Dez/2021 - Out/2023"
-                  description="Estou participando de um curso presencial, no qual estou desenvolvendo minhas habilidades no pacote Office, com conteúdos relacionados à administração."
+                  description="Estou participando de um curso presencial, na qual estou desenvolvendo minhas habilidades no pacote Office, com conteúdos relacionados à administração."
                 />
               </Flex>
             </Flex>

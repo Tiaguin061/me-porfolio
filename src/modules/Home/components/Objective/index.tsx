@@ -2,6 +2,7 @@ import {
   Box,
   Fade,
   Flex,
+  Highlight,
   ScaleFade,
   Text,
   useDisclosure,
@@ -29,14 +30,29 @@ export function Objective() {
         onViewportEnter={onOpen}
         onViewportLeave={onClose}
       >
-        <Flex alignItems="center" flexDirection="column">
+        <Flex
+          alignItems="center"
+          flexDirection="column"
+          mx="auto"
+          my="0"
+          maxW={860}
+        >
           <SectionTitle>Objetivo</SectionTitle>
 
           <Flex flexDirection="column">
             <Text as="p" mt={4} mb={2} color="gray.300">
-              Minha meta é atuar como freelancer ou em uma empresa fixa na área
-              de programação, seja como Backend, Frontend ou Fullstack,
-              trabalhando com as tecnologias NextJS, NodeJS e Typescript.
+              <Highlight
+                query={[
+                  "atuar",
+                  "Backend, Frontend ou Fullstack",
+                  "NextJS, NodeJS e Typescript",
+                ]}
+                styles={{ fontWeight: "bold", color: "white" }}
+              >
+                Minha meta é atuar como freelancer ou em uma empresa fixa na
+                área de programação, seja como Backend, Frontend ou Fullstack,
+                trabalhando com as tecnologias NextJS, NodeJS e Typescript.
+              </Highlight>
             </Text>
 
             <CustomLink
