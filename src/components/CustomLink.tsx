@@ -19,7 +19,9 @@ export function CustomLink({ link, linkProps, children }: CustomLinkProps) {
       gap={2}
       fontSize={["md"]}
       lineHeight="20px"
+      transition="all 0.2s"
       _hover={{
+        filter: "brightness(120%)",
         textDecoration: "none",
       }}
       {...linkProps}

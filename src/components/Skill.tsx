@@ -14,6 +14,10 @@ export function Skill({ icon, title }: SkillProps) {
       borderRadius="md"
       py={2}
       px={4}
+      transition="all 0.2s"
+      _hover={{
+        filter: "brightness(120%)",
+      }}
     >
       <Box display="flex" alignItems="center" gap={2}>
         {icon}

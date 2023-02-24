@@ -24,8 +24,9 @@ export function ButtonWithTooltip({
         fontWeight="normal"
         fontSize={["md"]}
         lineHeight="20px"
+        transition="all 0.2s"
         _hover={{
-          bg: "gray.800",
+          filter: "brightness(120%)",
         }}
         {...buttonProps}
       >
