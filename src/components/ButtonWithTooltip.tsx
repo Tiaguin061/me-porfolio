@@ -18,7 +18,6 @@ export function ButtonWithTooltip({
         gap={2}
         py={2}
         px={4}
-        mt={1}
         bg="gray.800"
         borderRadius="md"
         cursor="pointer"
