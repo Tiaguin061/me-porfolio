@@ -15,6 +15,20 @@ export const theme = extendTheme({
         letterSpacing: "wide",
         scrollBehavior: 'smooth',
       },
+      '::-webkit-scrollbar': {
+        width: '4px',
+      },
+      '::-webkit-scrollbar-track': {
+        boxShadow: 'inset 0 0 5px #2c303c', 
+        borderREadius: '10px',
+      },
+      '::-webkit-scrollbar-thumb': {
+        background: 'pink.500', 
+        borderRadius: '10px',
+      },
+      '::-webkit-scrollbar-thumb:hover': {
+        background: 'pink.500', 
+      }
     }
   },
 
