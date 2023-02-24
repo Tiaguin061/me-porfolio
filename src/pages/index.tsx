@@ -17,11 +17,13 @@ export default function Home() {
       </Head>
       <Box as="main" id="/">
         <Introduction />
+
+        <About />
         <Objective />
+
         <ProfessionalExperienceList />
         <SkillsSection />
         <FormationsListSection />
-        <About />
 
         <HireAService />
       </Box>
