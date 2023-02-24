@@ -22,7 +22,7 @@ export function SkillsSection() {
         onViewportEnter={onOpen}
         onViewportLeave={onClose}
       >
-        <Box px={4}>
+        <Box px={4} mx="auto" my="0" maxW={860}>
           <Box display="flex" alignItems="center" flexDirection="column">
             <SectionTitle mb={4}>Habilidades</SectionTitle>
 
