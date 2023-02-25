@@ -12,7 +12,7 @@ export default function Document() {
         />
 
         <meta charSet="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="/kaguyalogo.png"></link>
+        <link rel="icon" type="image/x-icon" href="/logo.svg"></link>
         <meta
           name="description"
           content="Portfólio de Desenvolvedor web FullStack na stack javascript/Tyescript. Acompanhe as experiências profissionais, formações e saiba mais sobre Tiago Gonçalves."
