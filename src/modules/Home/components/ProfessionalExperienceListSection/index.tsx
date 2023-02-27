@@ -40,7 +40,7 @@ export function ProfessionalExperienceList() {
               <Flex gap={2} alignItems="flex-start">
                 <TimeLine />
                 <CardInformation
-                  title="Software Engineer and co-Founder at Kaguya"
+                  title="Software Developer and co-Founder at Kaguya"
                   experienceDate="Ago/2021 - Em andamento"
                   description="Em parceria com um amigo, sou co-fundador da Kaguya, na qual é um projeto educacional B2B que visa estruturar conteúdos da internet sugeridos pela própria comunidade."
                   hasAboutMoreButton
@@ -53,7 +53,7 @@ export function ProfessionalExperienceList() {
               <Flex gap={2} alignItems="flex-start">
                 <TimeLine />
                 <CardInformation
-                  title="Software Engineer at The monkeynauts"
+                  title="Software Developer at The monkeynauts"
                   experienceDate="Dez/2021 - Set/2022"
                   description="Trabalhei como freelancer em uma equipe e desenvolvemos uma API completa para um jogo, utilizando NodeJS. A API possui recursos como sistema de compras com criptomoedas, entre outras características, e foi consumida no frontend com ReactJS."
                   hasAboutMoreButton
@@ -70,7 +70,7 @@ export function ProfessionalExperienceList() {
               <Flex gap={2} alignItems="flex-start">
                 <TimeLine />
                 <CardInformation
-                  title="Software Engineer at Nou"
+                  title="Software Developer at Nou"
                   experienceDate="Ago/2022 - Dez/2022"
                   description="Também trabalhei como freelancer e desenvolvi uma API completa para a criação de empresas, cargos e usuários, usando NodeJS. Essa API foi consumida no frontend com ReactJS."
                   hasAboutMoreButton
