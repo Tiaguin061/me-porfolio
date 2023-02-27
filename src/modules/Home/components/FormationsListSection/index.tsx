@@ -23,7 +23,7 @@ export function FormationsListSection() {
           my="0"
           maxW={860}
         >
-          <SectionTitle>Formações</SectionTitle>
+          <SectionTitle>Educação</SectionTitle>
 
           <Flex mt={6} justifyContent="flex-start" w="100%">
             <Flex

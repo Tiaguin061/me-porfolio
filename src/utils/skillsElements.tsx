@@ -50,6 +50,9 @@ export const backend = {
   graphql: (
     <Skill icon={<GrGraphQl color="#e535ab" size={20} />} title="Graphql" />
   ),
+  firebase: (
+    <Skill icon={<SiFirebase color="#FFA611" size={20} />} title="Firebase" />
+  ),
 };
 
 export const frontend = {
@@ -68,9 +71,6 @@ export const frontend = {
       icon={<SiStyledcomponents color="#d762e6" size={20} />}
       title="Styled-components"
     />
-  ),
-  firebase: (
-    <Skill icon={<SiFirebase color="#FFA611" size={20} />} title="Firebase" />
   ),
   metamask: (
     <Skill icon={<GiFoxHead color="#F6851B" size={20} />} title="Metamask" />
