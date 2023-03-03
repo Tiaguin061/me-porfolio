@@ -1,8 +1,8 @@
 import { Box, Button, ButtonProps, Text } from "@chakra-ui/react";
 
 export interface CardInformation {
-  title?: string;
-  experienceDate?: string;
+  title?: string | React.ReactNode;
+  experienceDate?: string | React.ReactNode;
   description?: string | React.ReactNode;
   hasAboutMoreButton?: boolean;
   buttonProps?: ButtonProps;

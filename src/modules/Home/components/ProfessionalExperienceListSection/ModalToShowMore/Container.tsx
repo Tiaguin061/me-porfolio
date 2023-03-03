@@ -40,7 +40,7 @@ export interface ModalToShowMoreContainerProps {
 
   carrouselImages: React.ReactElement<ImageProps>[];
 
-  modalTitle: string;
+  modalTitle: string | React.ReactNode;
 
   children?: React.ReactNode;
 
