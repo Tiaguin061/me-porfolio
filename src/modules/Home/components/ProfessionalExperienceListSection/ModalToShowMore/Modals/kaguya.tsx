@@ -1,5 +1,5 @@
 import { skillsElements } from "@/utils/skillsElements";
-import { Image, Text } from "@chakra-ui/react";
+import { Highlight, Image, Text } from "@chakra-ui/react";
 import { ModalToShowMoreContainer } from "../Container";
 
 const carrouselImages = [
@@ -47,7 +47,11 @@ export function KaguyaModal({ modal }: KaguyaModalProps) {
     <ModalToShowMoreContainer
       modal={modal}
       carrouselImages={carrouselImages}
-      modalTitle="Kaguya"
+      modalTitle={
+        <Highlight query={["Kaguya"]} styles={{ color: "pink.500" }}>
+          Software Developer and Co-founder at Kaguya
+        </Highlight>
+      }
       skills={{
         backend: backendSkills,
         frontend: frontendSkills,
@@ -57,22 +61,29 @@ export function KaguyaModal({ modal }: KaguyaModalProps) {
       }}
     >
       <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
-        Em parceria com um amigo e eu como co-founder, decidimos iniciar o
-        projeto para solucionar a falta de organização dos conteúdos gratuitos
-        (principalmente vídeos) na internet. Aqui está um breve resumo do
-        projeto.
+        O projeto funciona com base em trilhas e playlists, ou seja, cada trilha
+        representa uma tecnologia diferente e, ao acessá-la, serão listadas
+        todas as playlists com as aulas relacionadas àquela trilha. Os nomes
+        foram escolhidos desta forma para transmitir menos a perspectiva de que
+        se trata de uma plataforma de cursos comum. A ideia é que o usuário
+        tenha um caminho direto ao ponto para o aprendizado, baseado no que a
+        própria comunidade mesmo válida como bom e de qualidade.
       </Text>
       <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
-        Inicialmente, a plataforma tem a capacidade de organizar completamente
-        os conteúdos, permitindo que os usuários criem suas contas e possam
-        aprender de forma organizada.
+        Com o sistema de criação e listagens de sugestões sendo desenvolvido em
+        microserviço, o aluno poderá sugerir uma nova trilha de conteúdos, para
+        que a comunidade avalie se deseja ir para a plataforma. Esta é uma das
+        funcionalidades mais importantes do aplicativo, pois conecta o aluno com
+        a plataforma, fazendo com que seja mais participativo.
       </Text>
+
       <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
-        Seguindo os princípios da <strong>arquitetura de software SOLID</strong>
-        , estamos implementando uma funcionalidade de comunidade, que permite
-        aos próprios usuários contribuírem com a plataforma, adicionando novos
-        conteúdos, através de um{" "}
-        <strong>microserviço com NestJS e Graphql</strong>.
+        A coleta de dados será outro ponto importante, pois com isto, será
+        possível otimizar o perfil de usuário e adicionar novas funcionalidades
+        no futuro que agregará a comunidade de programação, como por exemplo a
+        conexão de empresa e aluno, que é fazer o aluno ter um perfil de
+        excelência para que recrutadores de empresas possam acessar a plataforma
+        e buscar os melhores alunos para uma possível contratação.
       </Text>
     </ModalToShowMoreContainer>
   );
