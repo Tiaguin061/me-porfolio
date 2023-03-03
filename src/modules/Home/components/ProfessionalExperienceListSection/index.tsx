@@ -1,4 +1,11 @@
-import { Box, Flex, ScaleFade, Text, useDisclosure } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Highlight,
+  ScaleFade,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 import { CardInformation } from "./CardInformation";
 
@@ -41,9 +48,41 @@ export function ProfessionalExperienceList() {
               <Flex gap={2} alignItems="flex-start">
                 <TimeLine />
                 <CardInformation
-                  title="Software Developer and co-Founder at Kaguya"
+                  title={
+                    <Highlight
+                      query={["Kaguya"]}
+                      styles={{ color: "pink.500" }}
+                    >
+                      Software Developer and co-Founder at Kaguya
+                    </Highlight>
+                  }
                   experienceDate="Ago/2021 - Em andamento"
-                  description="Em parceria com um amigo, sou co-fundador da Kaguya, na qual é um projeto educacional B2B que visa estruturar conteúdos da internet sugeridos pela própria comunidade."
+                  description={
+                    <>
+                      <Text textIndent={"20px"}>
+                        Em parceria com um amigo, sou co-fundador da Kaguya, um
+                        projeto educacional B2B que visa estruturar conteúdos de
+                        programação na internet.
+                      </Text>
+                      <Text textIndent={"20px"}>
+                        Percebemos que há muitos conteúdos de ensino com
+                        qualidade na internet, principalmente em vídeo, mas não
+                        existe uma plataforma que organize esses conteúdos de
+                        forma que as pessoas possam ter um guia sobre o que
+                        estudar em determinada tecnologia. A plataforma Kaguya
+                        surge como uma solução para esse problema, tendo como
+                        ponto principal a participação da comunidade na adição
+                        de novos conteúdos.
+                      </Text>
+                      <Text textIndent={"20px"}>
+                        Ao ser participativo na plataforma, o perfil do usuário
+                        se tornará mais completo, permitindo a adição de
+                        funcionalidades futuras, como a conexão entre alunos e
+                        empresas, melhorando a forma de contratação de novas
+                        pessoas desenvolvedoras.
+                      </Text>
+                    </>
+                  }
                   hasAboutMoreButton
                   buttonProps={{
                     onClick: kaguyaModal.onOpen,
@@ -54,7 +93,14 @@ export function ProfessionalExperienceList() {
               <Flex gap={2} alignItems="flex-start">
                 <TimeLine />
                 <CardInformation
-                  title="Software Developer at The monkeynauts"
+                  title={
+                    <Highlight
+                      query={["The", "Monkeynauts"]}
+                      styles={{ color: "pink.500" }}
+                    >
+                      Software Developer at The Monkeynauts
+                    </Highlight>
+                  }
                   experienceDate="Dez/2021 - Set/2022"
                   description={
                     <>
@@ -88,7 +134,11 @@ export function ProfessionalExperienceList() {
               <Flex gap={2} alignItems="flex-start">
                 <TimeLine />
                 <CardInformation
-                  title="Software Developer at Nou"
+                  title={
+                    <Highlight query={["Nou"]} styles={{ color: "pink.500" }}>
+                      Software Developer at Nou
+                    </Highlight>
+                  }
                   experienceDate="Ago/2022 - Dez/2022"
                   description="Também trabalhei como freelancer e desenvolvi uma API completa para a criação de empresas, cargos e usuários, usando NodeJS. Essa API foi consumida no frontend com ReactJS."
                   hasAboutMoreButton

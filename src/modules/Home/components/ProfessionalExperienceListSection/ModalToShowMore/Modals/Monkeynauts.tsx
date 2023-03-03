@@ -1,5 +1,5 @@
 import { skillsElements } from "@/utils/skillsElements";
-import { Image, Text } from "@chakra-ui/react";
+import { Highlight, Image, Text } from "@chakra-ui/react";
 import { ModalToShowMoreContainer } from "../Container";
 
 const carrouselImages = [
@@ -52,7 +52,14 @@ export function MonkeynautModal({ modal }: MonkeynautModalProps) {
     <ModalToShowMoreContainer
       modal={modal}
       carrouselImages={carrouselImages}
-      modalTitle="Monkeynaut"
+      modalTitle={
+        <Highlight
+          query={["The", "Monkeynauts"]}
+          styles={{ color: "pink.500" }}
+        >
+          Software Developer at The Monkeynauts
+        </Highlight>
+      }
       skills={{
         backend: backendSkills,
         frontend: frontendSkills,
@@ -63,16 +70,6 @@ export function MonkeynautModal({ modal }: MonkeynautModalProps) {
       }}
     >
       <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
-        Trabalhei como freelancer em uma equipe composta por outros
-        desenvolvedores, onde fui um dos responsáveis pelo desenvolvimento de
-        uma API completa para ser utilizada em jogos ou na web.
-      </Text>
-      <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
-        O projeto possui um painel de usuário e administrativo. O usuário pode
-        criar sua conta e conectar uma carteira de criptomoeda. Essa carteira
-        será responsável pelas transações realizadas no aplicativo.
-      </Text>
-      <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
         O aplicativo é baseado na ideia de possuir &quot;monkeynauts&quot; e
         naves para jogar o jogo que seria desenvolvido por outras pessoas da
         equipe de desenvolvimento. Com o eCommerce desenvolvido na plataforma,
@@ -80,6 +77,11 @@ export function MonkeynautModal({ modal }: MonkeynautModalProps) {
         aleatória, basta o usuário ter valor em sua carteira de criptomoeda para
         realizar transações e, a partir disso, o sistema adicionará um
         monkeynaut ou nave em sua conta.
+      </Text>
+      <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
+        O projeto possui um painel de usuário e administrativo. O usuário pode
+        criar sua conta e conectar uma carteira de criptomoeda. Essa carteira
+        será responsável pelas transações realizadas no aplicativo.
       </Text>
       <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">
         O serviço de transação de criptomoedas é o mais complexo do aplicativo,
