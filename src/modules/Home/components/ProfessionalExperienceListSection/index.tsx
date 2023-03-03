@@ -1,10 +1,11 @@
-import { Box, Flex, ScaleFade, useDisclosure } from "@chakra-ui/react";
+import { Box, Flex, ScaleFade, Text, useDisclosure } from "@chakra-ui/react";
 
 import { CardInformation } from "./CardInformation";
 
 import { SectionTitle } from "@/components/SectionTitle";
 import { TimeLine } from "@/components/TimeLine";
 import { KaguyaModal } from "./ModalToShowMore/Modals/kaguya";
+import { MonkeynautModal } from "./ModalToShowMore/Modals/Monkeynauts";
 
 export function ProfessionalExperienceList() {
   const scaleFade = useDisclosure();
@@ -55,14 +56,31 @@ export function ProfessionalExperienceList() {
                 <CardInformation
                   title="Software Developer at The monkeynauts"
                   experienceDate="Dez/2021 - Set/2022"
-                  description="Trabalhei como freelancer em uma equipe e desenvolvemos uma API completa para um jogo, utilizando NodeJS. A API possui recursos como sistema de compras com criptomoedas, entre outras características, e foi consumida no frontend com ReactJS."
+                  description={
+                    <>
+                      <Text textIndent={"20px"}>
+                        Trabalhei como freelancer em uma equipe composta por
+                        outros desenvolvedores, na qual fui um dos responsáveis
+                        pelo desenvolvimento de uma API completa para uso em
+                        jogos ou na web.
+                      </Text>
+                      <Text textIndent={"20px"}>
+                        O projeto contém diversas funcionalidades, desde a
+                        criação de contas até a administração do painel, além de
+                        sistemas para criação de itens de vendas para transações
+                        com criptomoedas e outras funcionalidades.
+                      </Text>
+                      <Text textIndent={"20px"}>
+                        Fui o único responsável pelo desenvolvimento de todo o
+                        projeto frontend web, tendo que implementar o consumo da
+                        API, conectar carteiras de criptomoedas e construir todo
+                        o layout do painel de usuário e administrativo.
+                      </Text>
+                    </>
+                  }
                   hasAboutMoreButton
                   buttonProps={{
                     onClick: monkeynautsModal.onOpen,
-                    cursor: "no-drop",
-                    _hover: {
-                      bg: "initial",
-                    },
                   }}
                 />
               </Flex>
@@ -89,6 +107,7 @@ export function ProfessionalExperienceList() {
       </ScaleFade>
 
       <KaguyaModal modal={kaguyaModal} />
+      <MonkeynautModal modal={monkeynautsModal} />
     </Box>
   );
 }

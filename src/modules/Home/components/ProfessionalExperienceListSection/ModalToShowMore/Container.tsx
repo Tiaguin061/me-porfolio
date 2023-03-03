@@ -144,9 +144,10 @@ export function ModalToShowMoreContainer({
               </Flex>
               <Flex
                 mt={6}
-                flexDirection={["column"]}
+                flexDirection={["column", "row"]}
                 gap={2}
                 maxW="max-content"
+                w="100%"
               >
                 {links?.accessPlatform && (
                   <CustomLink

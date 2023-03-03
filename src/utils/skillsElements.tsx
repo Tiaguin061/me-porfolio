@@ -14,7 +14,7 @@ import {
   SiStyledcomponents,
   SiTypescript,
 } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, Tb3DCubeSphere } from "react-icons/tb";
 
 export const backend = {
   typescript: (
@@ -52,6 +52,12 @@ export const backend = {
   ),
   firebase: (
     <Skill icon={<SiFirebase color="#FFA611" size={20} />} title="Firebase" />
+  ),
+  web3: (
+    <Skill
+      icon={<Tb3DCubeSphere color="#4a7ef7" size={20} />}
+      title="Web3.Js"
+    />
   ),
 };
 
