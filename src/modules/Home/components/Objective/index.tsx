@@ -40,7 +40,14 @@ export function Objective() {
           <SectionTitle>Objetivo</SectionTitle>
 
           <Flex flexDirection="column">
-            <Text as="p" mt={4} mb={2} color="gray.300">
+            <Text
+              as="p"
+              mt={4}
+              mb={2}
+              color="gray.300"
+              textAlign="left"
+              textIndent={"20px"}
+            >
               <Highlight
                 query={[
                   "atuar",
