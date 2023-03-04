@@ -53,7 +53,7 @@ export function ProfessionalExperienceList() {
                       query={["Kaguya"]}
                       styles={{ color: "pink.500" }}
                     >
-                      Software Developer and co-Founder at Kaguya
+                      Desenvolvedor de software e co-fundador da Kaguya
                     </Highlight>
                   }
                   experienceDate="Ago/2021 - Em andamento"
@@ -98,7 +98,7 @@ export function ProfessionalExperienceList() {
                       query={["The", "Monkeynauts"]}
                       styles={{ color: "pink.500" }}
                     >
-                      Software Developer at The Monkeynauts
+                      Desenvolvedor de software na The Monkeynauts
                     </Highlight>
                   }
                   experienceDate="Dez/2021 - Set/2022"
@@ -136,7 +136,7 @@ export function ProfessionalExperienceList() {
                 <CardInformation
                   title={
                     <Highlight query={["Nou"]} styles={{ color: "pink.500" }}>
-                      Software Developer at Nou
+                      Desenvolvedor de software na Nou
                     </Highlight>
                   }
                   experienceDate="Ago/2022 - Dez/2022"
