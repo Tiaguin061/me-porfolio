@@ -3,6 +3,7 @@ import { Box, ScaleFade, useDisclosure } from "@chakra-ui/react";
 import { SectionTitle } from "@/components/SectionTitle";
 import { BackendSkills } from "./BackendSkills";
 import { FrontendSkills } from "./FrontendSkills";
+import { HardSkills } from "./HardSkills";
 
 export function SkillsSection() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -36,6 +37,7 @@ export function SkillsSection() {
             >
               <BackendSkills />
               <FrontendSkills />
+              <HardSkills />
             </Box>
           </Box>
         </Box>
