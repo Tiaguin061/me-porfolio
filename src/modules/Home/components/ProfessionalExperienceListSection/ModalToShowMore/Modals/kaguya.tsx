@@ -57,7 +57,7 @@ export function KaguyaModal({ modal }: KaguyaModalProps) {
         frontend: frontendSkills,
       }}
       links={{
-        accessPlatform: "https://kaguya.com.br",
+        accessPlatform: "https://next-app-production-4ca2.up.railway.app",
       }}
     >
       <Text fontSize={["md"]} mt={2} color="gray.100" textIndent="20px">

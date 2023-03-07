@@ -8,11 +8,10 @@ import {
 } from "@chakra-ui/react";
 
 import { CardInformation } from "./CardInformation";
-
-import { SectionTitle } from "@/components/SectionTitle";
-import { TimeLine } from "@/components/TimeLine";
 import { KaguyaModal } from "./ModalToShowMore/Modals/kaguya";
 import { MonkeynautModal } from "./ModalToShowMore/Modals/Monkeynauts";
+import { SectionTitle } from "@/components/SectionTitle";
+import { TimeLine } from "@/components/TimeLine";
 
 export function ProfessionalExperienceList() {
   const scaleFade = useDisclosure();
@@ -131,7 +130,7 @@ export function ProfessionalExperienceList() {
                 />
               </Flex>
 
-              <Flex gap={2} alignItems="flex-start">
+              {/* <Flex gap={2} alignItems="flex-start">
                 <TimeLine />
                 <CardInformation
                   title={
@@ -150,7 +149,7 @@ export function ProfessionalExperienceList() {
                     },
                   }}
                 />
-              </Flex>
+              </Flex> */}
             </Flex>
           </Flex>
         </Flex>
